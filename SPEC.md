@@ -124,6 +124,22 @@ Each skin is a lazy-loaded React component. Same props contract: receives the jo
 - Purple accent, very clean and minimal. Short form — deceptively simple.
 - After filling everything out, a new "Additional Information" section unfolds with 15 more fields.
 
+### LinkedOut™ (`linked-out`) — LinkedIn Easy Apply parody
+
+- LinkedIn blue (#0a66c2) and white. Looks exactly like a LinkedIn job page — company banner, follower count, "Easy Apply" badge prominently displayed.
+- The "Easy Apply" promise is a lie: clicking it opens a 47-question form across multiple "quick steps."
+- Shows "1,247 applicants" in the header, updating to "1,248" the moment you land on the form.
+- After submission, a toast: "Application sent! This listing was posted 847 days ago."
+- Footer note: "The hiring manager last visited LinkedIn in 2022."
+
+### iCan'tMS™ (`icantms`) — iCIMS parody
+
+- Grey and corporate blue. Notoriously bad enterprise UX used by massive corporations.
+- Forces account creation with contradictory password rules (must contain a symbol, but `@` is not allowed).
+- After uploading your resume, shows a spinner for 8 seconds: "Parsing resume with AI..." — then displays every field blank. "Please complete all required fields manually."
+- Submit button is greyed out. No error messages explain why. One field somewhere has a hidden validation failure.
+- Final page is a generic "Thank you for your interest" with a reference number like `REQ-2024-847291-A` and zero other information.
+
 ---
 
 ## Rejection Modes
@@ -142,6 +158,8 @@ Each mode is a lazy-loaded full-screen takeover component. After the animation, 
 
 **`speedrun`** — Timer starts on submit click. Giant "REJECTED" stamp after 0.003 seconds. Shows a leaderboard of fake records. "Amazon — 0.002s (WR)".
 
+**`assessment-gauntlet`** — You're redirected to a third-party assessment platform ("PyMetrix™"). A three-hour battery begins: HackerRank coding problem, personality questionnaire (73 questions), abstract reasoning games, video interview prompt. A progress bar labelled "Step 1 of 6" crawls forward. After completing everything, a confirmation screen: "Assessment complete. Results submitted to hiring team." Four seconds later, an automated rejection email arrives. "Our AI-powered screening has determined you are not a match at this time. Your responses will be stored for 7 years."
+
 ### Personalized Modes (need per-job rejection content)
 
 **`fake-email`** — Screen transitions to a Gmail-esque inbox. Loading state, then a rejection email arrives from the company. Personalized subject, body, the works. Below the email: "We'll keep your CV on file" with a countdown: "Time on file: 4...3...2...1...0. Deleted."
@@ -149,6 +167,10 @@ Each mode is a lazy-loaded full-screen takeover component. After the animation, 
 **`ats-score`** — Dashboard showing "AI Screening Results". Animated score gauge sweeping to some terrible number (2-15 / 100). Category breakdown with per-job snarky comments: "Buzzword Density: 3/100 — Did not mention 'synergy' once", "Enthusiasm for Pizza Fridays: 0/100 — CRITICAL FAILURE". Bottom: "Recommendation: AUTO-REJECT. Confidence: 99.97%"
 
 **`interview-then-ghost`** — Multi-stage fake interview process plays out rapidly. Phone screen → Technical → Final round with VP → "Offer stage..." → loading spinner → screen goes blank. After 5s: "The recruiter has been 'reassigned'. This position has been 'put on hold'."
+
+**`culture-fit`** — The most infuriating real rejection. A progress bar races through stages: Resume Screened ✓ → Phone Screen ✓ → Technical ✓ → Final Round ✓ → References Checked ✓ → Offer Pending... then: email notification sound. Opens a 2-sentence email: "After careful consideration, we've decided to move forward with candidates who are a stronger cultural fit. We wish you the best in your search." No score. No feedback. No explanation. Per-job content: the specific stage reached before the culture-fit guillotine dropped, and the recruiter's name who sent it.
+
+**`phantom-offer`** — The cruelest mode. Simulates receiving a verbal offer: a warm recruiter email saying "We're thrilled to extend an offer — expect the formal paperwork by EOD Friday 🎉." A countdown timer ticks toward Friday. On Friday: nothing. Three business days pass (fast-forwarded with a clock animation). Then a new email arrives: "After some internal restructuring, we've made the difficult decision to put this role on hold. You were our top candidate and we were truly impressed. We hope to reconnect when the position reopens." Per-job content: recruiter name, promised timeline, and the fake offer details (title, fake salary).
 
 ---
 
