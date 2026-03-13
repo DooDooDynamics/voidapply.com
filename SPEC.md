@@ -2,32 +2,7 @@
 
 > **voidapply.com** — "Apply faster than ever. Right to the void."
 >
-> A satirical static website that clones common job application UIs, lets users fill them out, then comedically destroys their application. Built as a love letter to everyone who's applied to 200 jobs and heard back from 3.
-
----
-
-## Tech Stack & Conventions
-
-- **Vite + React 18 + TypeScript** (strict mode)
-- **React Router v6** with **HashRouter** (GitHub Pages, Actions deploy)
-- **Tailwind CSS v3**
-- **Framer Motion** for rejection animations and page transitions
-- **Fuse.js** for client-side fuzzy search
-- **Vitest + React Testing Library** for tests
-- No backend. No APIs. Pure static SPA. Data is TypeScript modules bundled at build time.
-- Deploy to **GitHub Pages**. `public/CNAME` contains `voidapply.com`. Vite base path is `/`.
-
-### Code Style Rules
-
-This is a joke site, but the code is not a joke. Follow these throughout:
-
-- **Prefer `type` over `interface`** everywhere. Only use `interface` when declaration merging is genuinely needed.
-- **Proper component splitting.** No god components. Each ATS skin, rejection mode, and page is its own module. Shared form fields (text input, textarea, file upload, select) are reusable components.
-- **Code-split rejection modes and ATS skins** with `React.lazy` + `Suspense`. The user only ever sees one skin and one mode per page load — don't bundle them all eagerly.
-- **State management:** React state + URL query params. No external state library. The URL is the source of truth for which job, skin, and rejection mode are active.
-- **Repository pattern** for the data layer. Define repository types (`JobRepository`, `CompanyRepository`) with methods like `searchJobs`, `getJob`, `getJobsByCompany`, etc. Implement them with a static version that reads from the TypeScript data modules. This makes future migration to client-server trivial — swap the implementation, keep the types.
-- **Data files grouped by job category:** `src/data/jobs/engineering.ts`, `src/data/jobs/marketing.ts`, etc. A barrel `index.ts` merges all categories and builds the Fuse.js search index.
-- Clean imports, no barrel re-exports of everything, no circular dependencies.
+> A satirical job board with parody ATS interfaces that lets you fill out an application and rejects you immediately. Built as catharsis for everyone who's applied to 200 jobs and heard back from 0.
 
 ---
 
@@ -219,50 +194,3 @@ Include **5-10 focused Vitest + React Testing Library tests** covering core logi
 These are smoke tests to prove the core logic works, not comprehensive coverage. Keep them fast and focused.
 
 ---
-
-## MVP vs Iterations
-
-### MVP (the one-shot build)
-
-The goal is a working end-to-end flow: search → pick a job → fill out an application → get rejected.
-
-- **Data:** 5 job listings across 2 companies (Google, Amazon). 2 categories (engineering, product). Each job has fake-email rejection content. At least 2 jobs have ats-score content.
-- **ATS Skins (3):** WorkNight, GreenHouse of Pain, Talaeo
-- **Rejection Modes (4):** dev-null, ghost, speedrun, fake-email
-- **Pages:** HomePage, SearchResultsPage, JobPage (with full apply flow), NotFoundPage
-- **Dark mode** toggle working
-- **Tests:** the 5-10 vitest tests listed above, passing
-- **Deploy-ready:** builds cleanly, serves from GitHub Pages, CNAME configured
-
-This proves the architecture, the skin system, the rejection system, the data layer, the routing, and the shareable URLs. Everything after this is additive content following the established patterns.
-
-### Iteration 1 — More Content
-
-- Add remaining ATS skins (Rejectable, Lever to Nowhere)
-- Add remaining rejection modes (shredder, black-hole, ats-score, interview-then-ghost)
-- Expand to 8-10 companies, 30-50 job listings across all categories
-- CompanyPage
-
-### Iteration 2 — Polish & Virality
-
-- Social sharing meta tags (og:image, og:title, og:description)
-- Shareable rejection result cards ("I got rejected from Google in 0.003s!")
-- Animation polish pass — easing curves, timing, mobile responsiveness
-- More jobs, more rejection email variants, crowd-sourced contributions welcome
-
-### Iteration 3 — (Optional, future)
-
-- Build-time script to batch-generate job listings + rejection content via LLM API
-- Migrate to client-server if traffic justifies it (the repository interface makes this painless)
-- Analytics
-
----
-
-## What NOT to Build
-
-- No user accounts, auth, or real file storage
-- No actual email sending
-- No server-side anything
-- No over-engineered state management — React state + URL params
-- No external database — TypeScript modules are the database
-- No CI/CD pipeline for v1 — deploy manually or with a simple GH Action
