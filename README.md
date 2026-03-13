@@ -53,3 +53,7 @@ npm run dev
 npm run build   # production build
 npm run test    # vitest
 ```
+
+## Debugging
+
+You should be able to find everything you need for debugging the ATS skins and Rejection modes at `/debug`
