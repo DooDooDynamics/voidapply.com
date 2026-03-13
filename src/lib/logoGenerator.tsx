@@ -35,6 +35,7 @@ import type { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 const FA_BRAND_MAP: Record<string, IconDefinition> = {
   google: faGoogle,
   amazon: faAmazon,
+  meta: faFacebook,
   facebook: faFacebook,
   apple: faApple,
   microsoft: faMicrosoft,
