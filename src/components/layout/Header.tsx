@@ -1,19 +1,45 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useTheme } from '@/context/ThemeContext'
 
 export function Header() {
   const { theme, toggleTheme } = useTheme()
+  const location = useLocation()
+
+  const navLinks = [
+    { to: '/search?q=', label: 'Jobs' },
+  ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+    <header className="sticky top-0 z-50 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-        <Link to="/" className="text-lg font-bold text-gray-900 dark:text-gray-100">
-          Void<span className="text-blue-600 dark:text-blue-400">Apply</span>
-        </Link>
+        <div className="flex items-center gap-6">
+          <Link to="/" className="text-lg font-bold text-gray-900 dark:text-gray-100">
+            Void<span className="text-linkedin dark:text-blue-400">Apply</span>
+          </Link>
+
+          <nav className="hidden sm:flex items-center gap-1">
+            {navLinks.map((link) => {
+              const isActive = location.pathname === '/search' && link.to.startsWith('/search')
+              return (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`px-3 py-1.5 text-sm rounded-md ${
+                    isActive
+                      ? 'text-linkedin dark:text-blue-400 font-medium'
+                      : 'text-gray-600 dark:text-gray-400'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              )
+            })}
+          </nav>
+        </div>
 
         <button
           onClick={toggleTheme}
-          className="p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+          className="p-2 rounded-md text-gray-500 dark:text-gray-400"
           aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
         >
           {theme === 'light' ? (

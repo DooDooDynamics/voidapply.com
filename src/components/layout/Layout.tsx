@@ -7,7 +7,7 @@ export function Layout() {
   const location = useLocation()
 
   return (
-    <div className="min-h-screen flex flex-col bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+    <div className="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-950 text-gray-900 dark:text-gray-100">
       <Header />
       <main className="flex-1">
         <AnimatePresence>

@@ -43,7 +43,7 @@ function SkinSelector({
           <select
             value={currentSkin}
             onChange={(e) => onSkinChange(e.target.value)}
-            className="px-2 py-1 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
+            className="px-2 py-1 border border-gray-300 dark:border-gray-600 rounded-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 text-sm"
           >
             {skins.map((s) => (
               <option key={s.id} value={s.id}>
@@ -57,7 +57,7 @@ function SkinSelector({
           <select
             value={currentMode}
             onChange={(e) => onModeChange(e.target.value)}
-            className="px-2 py-1 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100"
+            className="px-2 py-1 border border-gray-300 dark:border-gray-600 rounded-sm bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 text-sm"
           >
             {modes.map((m) => (
               <option key={m.id} value={m.id}>
@@ -105,11 +105,13 @@ export function JobPage() {
   if (!job || !company) {
     return (
       <div className="max-w-2xl mx-auto px-4 py-20 text-center">
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">Job Not Found</h1>
-        <p className="text-gray-500 dark:text-gray-400 mb-6">
+        <h1 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+          Job Not Found
+        </h1>
+        <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
           This position has been filled. Just kidding, it never existed.
         </p>
-        <Link to="/" className="text-blue-600 dark:text-blue-400 hover:underline">
+        <Link to="/" className="text-sm text-linkedin dark:text-blue-400">
           Back to home
         </Link>
       </div>
@@ -157,16 +159,16 @@ export function JobPage() {
   if (completed) {
     return (
       <div className="max-w-2xl mx-auto px-4 py-20 text-center">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
+        <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-3">
           Application Complete
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-8">
+        <p className="text-sm text-gray-600 dark:text-gray-400 mb-8">
           Your application to {company.name} has been thoroughly rejected.
         </p>
-        <div className="flex gap-4 justify-center flex-wrap">
+        <div className="flex gap-3 justify-center flex-wrap">
           <Link
             to="/"
-            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg"
+            className="px-5 py-2.5 bg-linkedin hover:bg-linkedin-dark text-white font-medium rounded-full text-sm"
           >
             Apply to Another Job
           </Link>
@@ -175,7 +177,7 @@ export function JobPage() {
               const url = window.location.href
               navigator.clipboard.writeText(url)
             }}
-            className="px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-lg font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
+            className="px-5 py-2.5 border border-linkedin text-linkedin dark:border-blue-400 dark:text-blue-400 rounded-full font-medium text-sm"
           >
             Share This Rejection
           </button>
@@ -209,86 +211,107 @@ export function JobPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Job Description */}
-        <div className="lg:col-span-2">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">{job.title}</h1>
-          <div className="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400 mb-6">
-            <Link to={`/company/${company.id}`}>{company.name}</Link>
-            <span>&middot;</span>
-            <span>{job.location}</span>
-            <span>&middot;</span>
-            <span>{job.type}</span>
-          </div>
-
-          <div className="prose dark:prose-invert max-w-none">
-            <p className="text-gray-700 dark:text-gray-300 mb-6">{job.description}</p>
-
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">
-              Requirements
-            </h3>
-            <ul className="space-y-2 mb-6">
-              {job.requirements.map((req, i) => (
-                <li
-                  key={i}
-                  className="text-sm text-gray-700 dark:text-gray-300 flex items-start gap-2"
-                >
-                  <span className="text-blue-500 mt-1 shrink-0">&bull;</span>
-                  {req}
-                </li>
-              ))}
-            </ul>
-
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">
-              Nice to Have
-            </h3>
-            <ul className="space-y-2">
-              {job.niceToHaves.map((nth, i) => (
-                <li
-                  key={i}
-                  className="text-sm text-gray-700 dark:text-gray-300 flex items-start gap-2"
-                >
-                  <span className="text-gray-400 mt-1 shrink-0">&bull;</span>
-                  {nth}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* Company Card + Apply CTA */}
-        <div className="lg:col-span-1">
-          <div className="sticky top-20 border border-gray-200 dark:border-gray-700 rounded-lg p-5 bg-white dark:bg-gray-900">
-            <div className="flex items-center gap-3 mb-4">
-              <CompanyLogo companyId={company.id} size={40} />
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100">{company.name}</h3>
-                <p className="text-xs text-gray-500 dark:text-gray-400">{company.industry}</p>
+        <div className="lg:col-span-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6">
+          <div className="flex items-start gap-4 mb-5">
+            <CompanyLogo companyId={company.id} size={48} className="shrink-0" />
+            <div>
+              <h1 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+                {job.title}
+              </h1>
+              <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mt-1">
+                <Link to={`/company/${company.id}`} className="text-linkedin dark:text-blue-400">
+                  {company.name}
+                </Link>
+                <span>&middot;</span>
+                <span>{job.location}</span>
               </div>
-            </div>
-
-            <div className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-5">
-              <div className="flex justify-between">
-                <span>Salary</span>
-                <span className="text-gray-900 dark:text-gray-100 font-medium text-right max-w-[200px]">
+              <div className="flex gap-1.5 mt-2 text-xs">
+                <span className="bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 px-2 py-0.5 rounded-sm font-medium">
                   {job.salary}
                 </span>
-              </div>
-              <div className="flex justify-between">
-                <span>Posted</span>
-                <span className="text-gray-900 dark:text-gray-100">{job.postedDate}</span>
+                <span className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-2 py-0.5 rounded-sm">
+                  {job.type}
+                </span>
               </div>
             </div>
+          </div>
 
-            <button
-              onClick={() => setApplying(true)}
-              className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg"
-            >
-              Apply Now
-            </button>
-            <p className="text-xs text-gray-400 dark:text-gray-500 text-center mt-2">
-              Average time to rejection: 0.003 seconds
-            </p>
+          <hr className="border-gray-200 dark:border-gray-800 mb-5" />
+
+          <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
+            {job.description}
+          </p>
+
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            Requirements
+          </h3>
+          <ul className="space-y-1.5 mb-6">
+            {job.requirements.map((req, i) => (
+              <li
+                key={i}
+                className="text-sm text-gray-700 dark:text-gray-300 flex items-start gap-2"
+              >
+                <span className="text-gray-400 mt-1 shrink-0">&bull;</span>
+                {req}
+              </li>
+            ))}
+          </ul>
+
+          <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2">
+            Nice to Have
+          </h3>
+          <ul className="space-y-1.5">
+            {job.niceToHaves.map((nth, i) => (
+              <li
+                key={i}
+                className="text-sm text-gray-700 dark:text-gray-300 flex items-start gap-2"
+              >
+                <span className="text-gray-400 mt-1 shrink-0">&bull;</span>
+                {nth}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Sidebar */}
+        <div className="lg:col-span-1">
+          <div className="sticky top-20 border border-gray-200 dark:border-gray-800 rounded-lg bg-white dark:bg-gray-900 overflow-hidden">
+            <div className="p-5">
+              <div className="flex items-center gap-3 mb-4">
+                <CompanyLogo companyId={company.id} size={36} />
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">
+                    {company.name}
+                  </h3>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">{company.industry}</p>
+                </div>
+              </div>
+
+              <div className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-5">
+                <div className="flex justify-between">
+                  <span>Salary</span>
+                  <span className="text-gray-900 dark:text-gray-100 font-medium text-right max-w-[180px] text-xs">
+                    {job.salary}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Posted</span>
+                  <span className="text-gray-900 dark:text-gray-100 text-xs">{job.postedDate}</span>
+                </div>
+              </div>
+
+              <button
+                onClick={() => setApplying(true)}
+                className="w-full py-2.5 bg-linkedin hover:bg-linkedin-dark text-white font-semibold rounded-full text-sm"
+              >
+                Apply Now
+              </button>
+              <p className="text-xs text-gray-400 dark:text-gray-500 text-center mt-2">
+                Average time to rejection: 0.003s
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -299,7 +322,7 @@ export function JobPage() {
 function LoadingFallback() {
   return (
     <div className="flex items-center justify-center py-20">
-      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600" />
+      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-linkedin" />
     </div>
   )
 }
