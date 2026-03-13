@@ -5,3 +5,9 @@ dist
 *.tsbuildinfo
 playwright/screenshots/
 playwright/test-results/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
