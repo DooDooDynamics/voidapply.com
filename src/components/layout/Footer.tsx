@@ -7,22 +7,25 @@ export function Footer() {
             <span className="font-bold text-gray-700 dark:text-gray-300">
               Void<span className="text-linkedin dark:text-blue-400">Apply</span>
             </span>
-            <span className="text-xs">&copy; 2026</span>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs">
-            <span>About</span>
-            <span>Accessibility</span>
-            <span>Talent Solutions</span>
-            <span>Privacy &amp; Terms</span>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              GitHub
+            <a
+              href="https://github.com/yaq1n0/voidapply.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source Code | GitHub
+            </a>
+            <a href="https://yaqinhasan.com" target="_blank" rel="noopener noreferrer">
+              Developer Contact
             </a>
           </div>
         </div>
 
         <p className="text-center text-xs text-gray-400 dark:text-gray-500 mt-4">
-          All applications discarded. Built with frustration.
+          Nothing is done with your data, this site isn't real. It's just catharsis from dealing
+          with the 2026 job market.
         </p>
       </div>
     </footer>
