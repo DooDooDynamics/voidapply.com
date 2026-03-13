@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from '@/context/ThemeContext'
 import { Layout } from '@/components/layout/Layout'
 import { HomePage } from '@/pages/HomePage'
@@ -10,7 +10,7 @@ import { NotFoundPage } from '@/pages/NotFoundPage'
 export function App() {
   return (
     <ThemeProvider>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<HomePage />} />
@@ -20,7 +20,7 @@ export function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   )
 }
