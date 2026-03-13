@@ -6,8 +6,9 @@ export const hrJobs: Job[] = [
     companyId: 'google',
     category: 'hr',
     title: 'People Partner — Engineering',
-    location: 'Mountain View, CA (Hybrid — but you need to be in-office for the conversations nobody wants to have over Zoom)',
-    salary: '$140,000 - $240,000 + stock + free therapy (you\'ll need it)',
+    location:
+      'Mountain View, CA (Hybrid — but you need to be in-office for the conversations nobody wants to have over Zoom)',
+    salary: "$140,000 - $240,000 + stock + free therapy (you'll need it)",
     type: 'Full-time',
     postedDate: '2024-02-12',
     description:
@@ -20,8 +21,8 @@ export const hrJobs: Job[] = [
     ],
     niceToHaves: [
       'Previous experience facilitating a meeting where someone cried, someone yelled, and someone opened their laptop to write code',
-      'Ability to explain to a Staff Engineer why they weren\'t promoted without them immediately interviewing at Meta',
-      'A degree in Psychology (you\'ll use it more than you expect)',
+      "Ability to explain to a Staff Engineer why they weren't promoted without them immediately interviewing at Meta",
+      "A degree in Psychology (you'll use it more than you expect)",
     ],
     rejectionContent: {
       'fake-email': {
@@ -48,7 +49,8 @@ Google People Operations Recruiting
     companyId: 'meta',
     category: 'hr',
     title: 'Head of Recruiting — Engineering',
-    location: 'Menlo Park, CA (in-office, so you can experience the culture you\'ll be selling to candidates)',
+    location:
+      "Menlo Park, CA (in-office, so you can experience the culture you'll be selling to candidates)",
     salary: '$200,000 - $340,000 + RSUs + the irony of being hired to hire others',
     type: 'Full-time',
     postedDate: '2024-01-22',
@@ -61,8 +63,8 @@ Google People Operations Recruiting
       'Data-driven approach to recruiting (cost per hire, time to fill, offer acceptance rate, and 47 other metrics we track)',
     ],
     niceToHaves: [
-      'Previous experience hiring during a hiring freeze (it\'s more common than you think)',
-      'Ability to explain the company\'s 5-year vision when the company pivots strategy every 6 months',
+      "Previous experience hiring during a hiring freeze (it's more common than you think)",
+      "Ability to explain the company's 5-year vision when the company pivots strategy every 6 months",
       'Emotional resilience for when a candidate ghosts you after you spent 4 months courting them (karma is real)',
     ],
     rejectionContent: {
@@ -89,17 +91,19 @@ Meta People Team`,
     companyId: 'netflix',
     category: 'hr',
     title: 'Talent Partner — Content & Studios',
-    location: 'Los Angeles, CA (Hollywood, where the talent is dramatic and the HR conversations are more dramatic)',
-    salary: '$180,000 - $300,000 (top of market, because our Talent Partners are stunning colleagues too)',
+    location:
+      'Los Angeles, CA (Hollywood, where the talent is dramatic and the HR conversations are more dramatic)',
+    salary:
+      '$180,000 - $300,000 (top of market, because our Talent Partners are stunning colleagues too)',
     type: 'Full-time',
     postedDate: '2024-02-20',
     description:
       "Support Netflix's content and studio teams as their Talent Partner, navigating the unique intersection of Hollywood egos and Silicon Valley culture. You'll coach executives who came from traditional media and are adjusting to a culture where anyone can be 'let go' with a generous severance and radical candor. Your role: keep the culture intact, keep the lawyers happy, and keep the talent stunning. The keeper test applies to everyone, including the person administering it.",
     requirements: [
       '7+ years of HR business partner experience, ideally with creative or entertainment industry exposure',
-      'Deep understanding of Netflix\'s culture (read the culture deck; understand the culture deck; live the culture deck)',
+      "Deep understanding of Netflix's culture (read the culture deck; understand the culture deck; live the culture deck)",
       'Experience with talent management in environments where "freedom and responsibility" means different things to different people',
-      'Comfort with radical candor — you will give and receive feedback that would be illegal at most other companies (it\'s not illegal, but it will feel like it)',
+      "Comfort with radical candor — you will give and receive feedback that would be illegal at most other companies (it's not illegal, but it will feel like it)",
     ],
     niceToHaves: [
       'Previous experience managing a keeper test review cycle and retaining your own job afterward',
@@ -133,7 +137,8 @@ Netflix Talent Team`,
     category: 'hr',
     title: 'HR Business Partner — AWS',
     location: 'Seattle, WA (in-office — we need you here for the "direct conversations")',
-    salary: '$130,000 - $220,000 + RSUs (vesting over 4 years, so you\'re incentivized to stay through the hard parts)',
+    salary:
+      "$130,000 - $220,000 + RSUs (vesting over 4 years, so you're incentivized to stay through the hard parts)",
     type: 'Full-time',
     postedDate: '2024-01-30',
     description:
@@ -146,7 +151,7 @@ Netflix Talent Team`,
       'Must be able to recite all 16 Leadership Principles and apply them to HR scenarios',
     ],
     niceToHaves: [
-      'Previous experience explaining to an employee why they\'re on a PIP using only Leadership Principle language',
+      "Previous experience explaining to an employee why they're on a PIP using only Leadership Principle language",
       'Ability to maintain empathy while processing the 47th "I\'m thinking about leaving" conversation this week',
       'Understanding of why URA (Unregretted Attrition) is considered a positive metric, and the ability to say it out loud without flinching',
     ],
@@ -177,7 +182,8 @@ Amazon PXT (People Experience & Technology — not HR, never HR)`,
     category: 'hr',
     title: 'Inclusion & Diversity Program Manager',
     location: 'Cupertino, CA (Apple Park — the most expensive circle of inclusion in the world)',
-    salary: '$150,000 - $250,000 + RSUs + the challenge of changing a company culture from the inside',
+    salary:
+      '$150,000 - $250,000 + RSUs + the challenge of changing a company culture from the inside',
     type: 'Full-time',
     postedDate: '2024-02-08',
     description:
@@ -190,9 +196,9 @@ Amazon PXT (People Experience & Technology — not HR, never HR)`,
       'Understanding of intersectionality and its application to corporate environments (theory meets cubicles)',
     ],
     niceToHaves: [
-      'Previous experience writing a corporate diversity report that\'s honest about challenges without becoming a PR liability',
+      "Previous experience writing a corporate diversity report that's honest about challenges without becoming a PR liability",
       'Ability to secure executive sponsorship from leaders whose calendars are booked 18 months out',
-      'Comfort with the pace of cultural change at a 164,000-person organization (spoiler: it\'s slow)',
+      "Comfort with the pace of cultural change at a 164,000-person organization (spoiler: it's slow)",
     ],
     rejectionContent: {
       'fake-email': {
@@ -229,7 +235,7 @@ Apple People Team`,
     requirements: [
       '5+ years of people operations or HR experience in technology companies',
       'Experience supporting R&D or engineering organizations with agile team structures',
-      'Strong data and analytics skills — you\'ll build people dashboards that managers forget to check',
+      "Strong data and analytics skills — you'll build people dashboards that managers forget to check",
       'Understanding of Scandinavian work culture (flat hierarchies, consensus-based decisions, and a healthy relationship with vacation time)',
     ],
     niceToHaves: [

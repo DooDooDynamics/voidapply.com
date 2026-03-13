@@ -14,7 +14,7 @@ export const designJobs: Job[] = [
       "Design experiences for 1.5 billion iOS users who will never appreciate the 200 hours you spent perfecting a button's corner radius. You'll work under design leadership that believes every pixel is sacred and every interaction should feel 'magical.' Your Figma files will be reviewed by committee, your prototypes will be NDA'd, and your portfolio will remain empty forever because nothing you make here can be shown publicly.",
     requirements: [
       '7+ years of UX/UI design experience at a consumer technology company',
-      'Mastery of Sketch, Figma, and whatever tool we internally built that you\'ve never heard of',
+      "Mastery of Sketch, Figma, and whatever tool we internally built that you've never heard of",
       'Deep understanding of the Apple Human Interface Guidelines (you should have them memorized, all 847 pages)',
       'Portfolio demonstrating obsessive attention to detail (we will zoom in to 400%)',
       'Ability to present design rationale to executives who will ask you to "make it more Apple"',
@@ -22,7 +22,7 @@ export const designJobs: Job[] = [
     niceToHaves: [
       'Synesthesia (we need someone who can feel whether a color is right)',
       'Previous experience being told a design is "almost perfect" 47 times',
-      'Comfort with the fact that Jony Ive\'s ghost still haunts the design studio',
+      "Comfort with the fact that Jony Ive's ghost still haunts the design studio",
     ],
     rejectionContent: {
       'fake-email': {
@@ -50,7 +50,8 @@ Apple Design Recruiting`,
     companyId: 'google',
     category: 'design',
     title: 'UX Researcher — Search Experience',
-    location: 'Mountain View, CA (Hybrid — research participants are in-person, everything else is a doc)',
+    location:
+      'Mountain View, CA (Hybrid — research participants are in-person, everything else is a doc)',
     salary: '$140,000 - $250,000 + the satisfaction of being ignored by product teams',
     type: 'Full-time',
     postedDate: '2024-02-14',
@@ -92,8 +93,10 @@ Google UX Research Hiring`,
     companyId: 'meta',
     category: 'design',
     title: 'Product Designer — Facebook Marketplace',
-    location: 'Menlo Park, CA or Remote (design reviews happen in VR now, and yes, it is as awkward as it sounds)',
-    salary: '$160,000 - $290,000 + RSUs (the real compensation is the friends you make before layoffs)',
+    location:
+      'Menlo Park, CA or Remote (design reviews happen in VR now, and yes, it is as awkward as it sounds)',
+    salary:
+      '$160,000 - $290,000 + RSUs (the real compensation is the friends you make before layoffs)',
     type: 'Full-time',
     postedDate: '2024-01-30',
     description:
@@ -101,7 +104,7 @@ Google UX Research Hiring`,
     requirements: [
       '4+ years of product design experience in consumer or marketplace products',
       'Strong visual and interaction design skills — your Figma files should be organized enough to survive a design critique',
-      'Experience designing for trust and safety (you\'ll need it — have you SEEN Marketplace?)',
+      "Experience designing for trust and safety (you'll need it — have you SEEN Marketplace?)",
       'Systems thinking — you\'ll work across listing, messaging, payments, and "why is this person asking me to pay in gift cards" flows',
     ],
     niceToHaves: [
@@ -145,7 +148,7 @@ Meta Design Recruiting`,
       'Strong portfolio demonstrating mobile-first design thinking',
       'Experience leading design within cross-functional squads (or whatever your company calls small teams with too many stakeholders)',
       'Ability to design for audio — a medium you cannot see, which makes design reviews interesting',
-      'Data literacy — you\'ll need to explain why users tap the wrong thing, and no, it\'s not always their fault',
+      "Data literacy — you'll need to explain why users tap the wrong thing, and no, it's not always their fault",
     ],
     niceToHaves: [
       'Experience designing for both free-tier (ads every 3 songs) and premium (ads every 6 podcasts) users',
@@ -179,7 +182,8 @@ Spotify Design Recruiting`,
     companyId: 'netflix',
     category: 'design',
     title: 'Senior Visual Designer — Brand & Marketing',
-    location: 'Los Gatos, CA or Hollywood, CA (where the content is made and the designers are stressed)',
+    location:
+      'Los Gatos, CA or Hollywood, CA (where the content is made and the designers are stressed)',
     salary: '$180,000 - $300,000 (top of market — we only hire stunning designers)',
     type: 'Full-time',
     postedDate: '2024-02-22',
@@ -224,7 +228,8 @@ Netflix Design Recruiting`,
     companyId: 'uber',
     category: 'design',
     title: 'Product Designer — Rider Experience',
-    location: 'San Francisco, CA (in-office — ironic for a company that gets people where they need to go)',
+    location:
+      'San Francisco, CA (in-office — ironic for a company that gets people where they need to go)',
     salary: '$155,000 - $275,000 + Uber credits (the ultimate perk or the ultimate test)',
     type: 'Full-time',
     postedDate: '2024-01-26',

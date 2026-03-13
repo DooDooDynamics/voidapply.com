@@ -22,7 +22,7 @@ export const operationsJobs: Job[] = [
     niceToHaves: [
       'Previous experience explaining to associates why the AI scheduling system is "fair"',
       'Comfort with being responsible for packages that contain everything from books to live lobsters',
-      'Steel-toed boots (you\'ll need them day one, and no, we don\'t provide them — Frugality)',
+      "Steel-toed boots (you'll need them day one, and no, we don't provide them — Frugality)",
     ],
     rejectionContent: {
       'fake-email': {
@@ -50,16 +50,16 @@ Amazon Operations Recruiting`,
     companyId: 'uber',
     category: 'operations',
     title: 'City Operations Manager — Los Angeles',
-    location: 'Los Angeles, CA (in-office, though you\'ll spend most of your time in the field)',
-    salary: '$120,000 - $190,000 + Uber credits (you\'ll need them, LA traffic is real)',
+    location: "Los Angeles, CA (in-office, though you'll spend most of your time in the field)",
+    salary: "$120,000 - $190,000 + Uber credits (you'll need them, LA traffic is real)",
     type: 'Full-time',
     postedDate: '2024-02-10',
     description:
       "Run Uber's operations in Los Angeles, a city where everyone drives but nobody wants to be a driver. You'll balance rider demand with driver supply, negotiate with regulators who want to ban you, and handle the PR fallout when surge pricing hits 4.7x during a Taylor Swift concert. Your job is to make sure there's always a car nearby — except during rush hour, rain, holidays, events, or any other time people actually need one.",
     requirements: [
       '4+ years of operations or general management experience in a marketplace or logistics business',
-      'Data fluency — you\'ll manage a city through dashboards, not windshields',
-      'Stakeholder management skills (you\'ll deal with regulators, drivers, riders, restaurants, and local media, often simultaneously)',
+      "Data fluency — you'll manage a city through dashboards, not windshields",
+      "Stakeholder management skills (you'll deal with regulators, drivers, riders, restaurants, and local media, often simultaneously)",
       'Experience with supply-demand dynamics (Econ 101 is finally useful)',
     ],
     niceToHaves: [
@@ -104,7 +104,7 @@ Uber Operations Recruiting`,
       'Ability to translate between engineer-speak and executive-speak (these are different languages)',
       'Experience managing programs with 50+ engineers (and the emotional intelligence to match)',
       'Proficiency with project management tools (Jira, Asana, or the custom internal tool we built that does the same thing but worse)',
-      'PMP certification (we won\'t admit it matters, but it does)',
+      "PMP certification (we won't admit it matters, but it does)",
     ],
     niceToHaves: [
       'Previous experience shipping a project that was "two weeks away" for six months',
@@ -137,7 +137,8 @@ Google TPM Recruiting`,
     companyId: 'apple',
     category: 'operations',
     title: 'Supply Chain Program Manager — iPhone',
-    location: 'Cupertino, CA (Apple Park — where supply chain is the most important team you\'ve never heard of)',
+    location:
+      "Cupertino, CA (Apple Park — where supply chain is the most important team you've never heard of)",
     salary: '$165,000 - $280,000 (competitive because Tim Cook ran operations and became CEO)',
     type: 'Full-time',
     postedDate: '2024-02-15',
@@ -191,7 +192,7 @@ Apple Operations Recruiting
       '5+ years of manufacturing or production operations experience, ideally in automotive',
       'Experience with lean manufacturing and continuous improvement (at Tesla, "continuous" means 24/7)',
       'Ability to troubleshoot production bottlenecks in real-time while walking the factory floor',
-      'Comfort with rapidly changing production targets (the number you\'re given on Monday will change by Wednesday)',
+      "Comfort with rapidly changing production targets (the number you're given on Monday will change by Wednesday)",
     ],
     niceToHaves: [
       'Previous experience sleeping on the factory floor during production ramp (this is not a joke)',
@@ -236,11 +237,11 @@ Tesla Manufacturing Recruiting
       '5+ years of program management experience in media, entertainment, or digital platforms',
       'Experience managing relationships with content partners who have strong opinions and stronger lawyers',
       'Ability to navigate complex contractual agreements (reading a music licensing contract is an extreme sport)',
-      'Strong organizational skills — you\'ll manage 20+ concurrent programs across 4 time zones',
+      "Strong organizational skills — you'll manage 20+ concurrent programs across 4 time zones",
     ],
     niceToHaves: [
       'Understanding of music royalty structures (this will take approximately 3 years to fully grasp)',
-      'Previous experience telling Taylor Swift\'s management that their album won\'t get a homepage takeover',
+      "Previous experience telling Taylor Swift's management that their album won't get a homepage takeover",
       'Ability to explain to podcast hosts why their show\'s placement algorithm is "fair"',
     ],
     rejectionContent: {

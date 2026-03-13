@@ -15,11 +15,7 @@ export function Footer() {
             <span>Accessibility</span>
             <span>Talent Solutions</span>
             <span>Privacy &amp; Terms</span>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
           </div>

@@ -7,7 +7,8 @@ export const managementJobs: Job[] = [
     category: 'management',
     title: 'Engineering Manager — Google Search',
     location: 'Mountain View, CA (Hybrid — but your calendar doesn\'t know what "hybrid" means)',
-    salary: '$220,000 - $400,000 + stock + the crushing weight of managing people who are smarter than you',
+    salary:
+      '$220,000 - $400,000 + stock + the crushing weight of managing people who are smarter than you',
     type: 'Full-time',
     postedDate: '2024-02-05',
     description:
@@ -21,7 +22,7 @@ export const managementJobs: Job[] = [
     ],
     niceToHaves: [
       'Previous experience managing a team through a reorg (ideally multiple reorgs)',
-      'Ability to give constructive feedback that doesn\'t make someone update their LinkedIn',
+      "Ability to give constructive feedback that doesn't make someone update their LinkedIn",
       'Therapy (you will need it; we do not pay for it — actually, we might, check the benefits page)',
     ],
     rejectionContent: {
@@ -48,8 +49,10 @@ Google Engineering Leadership Recruiting`,
     companyId: 'amazon',
     category: 'management',
     title: 'Senior Manager, Software Development — Retail',
-    location: 'Seattle, WA (in-office 5 days — RTO is not a suggestion, it\'s a Leadership Principle)',
-    salary: '$200,000 - $350,000 + RSUs (with Amazon\'s iconic 5/15/40/40 vesting — patience is a virtue)',
+    location:
+      "Seattle, WA (in-office 5 days — RTO is not a suggestion, it's a Leadership Principle)",
+    salary:
+      "$200,000 - $350,000 + RSUs (with Amazon's iconic 5/15/40/40 vesting — patience is a virtue)",
     type: 'Full-time',
     postedDate: '2024-01-14',
     description:
@@ -58,8 +61,8 @@ Google Engineering Leadership Recruiting`,
       '10+ years of engineering experience with 5+ years in management, including managing other managers',
       'Track record of delivering complex, large-scale systems at internet scale',
       'Expertise in writing 6-page narrative documents (PowerPoint is banned, and we mean it)',
-      'Deep commitment to Amazon\'s Leadership Principles (you should be able to apply them to ordering lunch)',
-      'Experience with annual planning processes that start in August and aren\'t finalized until January',
+      "Deep commitment to Amazon's Leadership Principles (you should be able to apply them to ordering lunch)",
+      "Experience with annual planning processes that start in August and aren't finalized until January",
     ],
     niceToHaves: [
       'Previous experience managing through a PIP cycle (giving, not receiving — hopefully)',
@@ -93,7 +96,8 @@ Amazon Leadership Recruiting`,
     category: 'management',
     title: 'Director of Engineering — AI Infrastructure',
     location: 'Menlo Park, CA (in-office — Mark believes in office culture, this week)',
-    salary: '$300,000 - $500,000 + massive RSU package (value subject to metaverse-related fluctuations)',
+    salary:
+      '$300,000 - $500,000 + massive RSU package (value subject to metaverse-related fluctuations)',
     type: 'Full-time',
     postedDate: '2024-02-18',
     description:
@@ -108,7 +112,7 @@ Amazon Leadership Recruiting`,
     niceToHaves: [
       'Previous experience leading through a major company layoff while maintaining team morale (specific to Meta? Perhaps.)',
       'Ability to pivot an entire engineering roadmap when the company pivots from metaverse to AI (hypothetically)',
-      'Experience managing a budget larger than some countries\' GDP for AI compute',
+      "Experience managing a budget larger than some countries' GDP for AI compute",
     ],
     rejectionContent: {
       'fake-email': {
@@ -186,8 +190,8 @@ Microsoft 365 Product Leadership`,
       '15+ years of engineering experience with 8+ years in VP-level roles',
       'Experience leading 200+ engineer organizations delivering mission-critical infrastructure',
       'Deep expertise in CDN, video streaming, or large-scale distributed systems',
-      'Track record of building high-performing teams without relying on process (Netflix doesn\'t do process; we do judgment)',
-      'Comfort with the Netflix culture deck (if any of the 125 slides make you uncomfortable, this isn\'t the role)',
+      "Track record of building high-performing teams without relying on process (Netflix doesn't do process; we do judgment)",
+      "Comfort with the Netflix culture deck (if any of the 125 slides make you uncomfortable, this isn't the role)",
     ],
     niceToHaves: [
       'Previous experience operating infrastructure where 1 second of downtime makes global news',
@@ -219,7 +223,8 @@ Netflix Engineering Leadership`,
     category: 'management',
     title: 'Engineering Director — Siri & AI Experiences',
     location: 'Cupertino, CA (Apple Park — the doughnut-shaped fortress of secrecy)',
-    salary: '$280,000 - $460,000 + RSUs + the knowledge that Siri\'s future is in your hands (no pressure)',
+    salary:
+      "$280,000 - $460,000 + RSUs + the knowledge that Siri's future is in your hands (no pressure)",
     type: 'Full-time',
     postedDate: '2024-01-30',
     description:

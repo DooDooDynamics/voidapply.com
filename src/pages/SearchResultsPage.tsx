@@ -38,9 +38,7 @@ export function SearchResultsPage() {
                 <p className="text-sm text-gray-800 dark:text-gray-200 mt-0.5">
                   {company?.name ?? job.companyId}
                 </p>
-                <p className="text-xs text-gray-500 dark:text-gray-400">
-                  {job.location}
-                </p>
+                <p className="text-xs text-gray-500 dark:text-gray-400">{job.location}</p>
                 <div className="flex flex-wrap gap-1.5 mt-2 text-xs">
                   <span className="bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 px-2 py-0.5 rounded-sm font-medium">
                     {job.salary}
@@ -63,10 +61,7 @@ export function SearchResultsPage() {
           <p className="text-gray-500 dark:text-gray-400">
             No jobs found. Much like your real job search.
           </p>
-          <Link
-            to="/"
-            className="inline-block mt-4 text-sm text-linkedin dark:text-blue-400"
-          >
+          <Link to="/" className="inline-block mt-4 text-sm text-linkedin dark:text-blue-400">
             Back to home
           </Link>
         </div>

@@ -7,7 +7,8 @@ export const dataScienceJobs: Job[] = [
     category: 'data-science',
     title: 'Senior Data Scientist — Content Analytics',
     location: 'Los Gatos, CA (in-office — we need to see your Jupyter notebooks in person)',
-    salary: '$210,000 - $370,000 (top of market, because our data scientists are stunning colleagues)',
+    salary:
+      '$210,000 - $370,000 (top of market, because our data scientists are stunning colleagues)',
     type: 'Full-time',
     postedDate: '2024-02-11',
     description:
@@ -15,7 +16,7 @@ export const dataScienceJobs: Job[] = [
     requirements: [
       '5+ years of data science experience with a focus on causal inference or recommendation systems',
       'Advanced degree in Statistics, Computer Science, Economics, or another field that involves Greek letters',
-      'Expert in Python, SQL, and Spark — ideally you can write a PySpark job that doesn\'t crash the cluster',
+      "Expert in Python, SQL, and Spark — ideally you can write a PySpark job that doesn't crash the cluster",
       'Experience with A/B testing at scale (we A/B test everything, including whether to A/B test)',
       'Ability to communicate findings to non-technical stakeholders who think "the data says" means "I agree with my gut feeling"',
     ],
@@ -51,22 +52,26 @@ Netflix Data Science Recruiting`,
           {
             name: 'Statistical Rigor',
             score: 14,
-            comment: 'Used the word "significant" in cover letter without specifying a p-value. Unacceptable.',
+            comment:
+              'Used the word "significant" in cover letter without specifying a p-value. Unacceptable.',
           },
           {
             name: 'Python Proficiency',
             score: 11,
-            comment: 'Listed pandas experience but no evidence of PySpark. Netflix-scale requires Netflix-scale tools.',
+            comment:
+              'Listed pandas experience but no evidence of PySpark. Netflix-scale requires Netflix-scale tools.',
           },
           {
             name: 'Stunning Colleague Potential',
             score: 6,
-            comment: 'Resume suggests adequate performance. At Netflix, adequate is another word for severance.',
+            comment:
+              'Resume suggests adequate performance. At Netflix, adequate is another word for severance.',
           },
           {
             name: 'Binge-Watch Score',
             score: 18,
-            comment: 'Netflix account shows 4 hours average daily viewing. High engagement. Hired? No. Valued as a subscriber? Absolutely.',
+            comment:
+              'Netflix account shows 4 hours average daily viewing. High engagement. Hired? No. Valued as a subscriber? Absolutely.',
           },
         ],
       },
@@ -119,7 +124,8 @@ Meta Data Science Recruiting`,
     companyId: 'spotify',
     category: 'data-science',
     title: 'Machine Learning Engineer — Recommendations',
-    location: 'Stockholm, Sweden or New York, NY (remote-friendly, like our microservice architecture)',
+    location:
+      'Stockholm, Sweden or New York, NY (remote-friendly, like our microservice architecture)',
     salary: 'Competitive + the power to influence what 600 million people listen to',
     type: 'Full-time',
     postedDate: '2024-02-19',
@@ -127,7 +133,7 @@ Meta Data Science Recruiting`,
       "Build the recommendation models behind Discover Weekly, Release Radar, and every playlist that knows your mood better than your therapist. You'll work with audio features, listening behavior, and collaborative filtering to surface music people didn't know they wanted — and occasionally, music nobody wants (we're still investigating why the model keeps recommending sea shanties). Your models serve hundreds of millions of users, and one bad deploy can ruin everyone's Monday morning commute.",
     requirements: [
       '4+ years of ML engineering experience, ideally in recommendation systems or information retrieval',
-      'Strong Python and Scala skills — our pipeline is a beautiful mix of both and we\'re not sorry',
+      "Strong Python and Scala skills — our pipeline is a beautiful mix of both and we're not sorry",
       'Experience with large-scale model training and serving (think TensorFlow/PyTorch + distributed compute)',
       'Understanding of collaborative filtering, content-based recommendations, and why combining them is harder than it sounds',
     ],
@@ -171,8 +177,8 @@ Spotify ML Recruiting`,
       "Push the boundaries of artificial intelligence research at Google DeepMind. You'll publish papers that get 10,000 citations, build models that beat humans at games nobody plays, and attend NeurIPS where everyone will ask you about GPT instead. Your research may or may not be productized — historically, it mostly ends up as a blog post that goes viral on Twitter and a demo that stops working after 3 months.",
     requirements: [
       'PhD in Machine Learning, Computer Science, Neuroscience, Physics, or Mathematics',
-      '3+ publications at top-tier venues (NeurIPS, ICML, ICLR, or the Journal of We\'re Running Out of Acronyms)',
-      'Deep expertise in at least one area: reinforcement learning, language models, computer vision, or something we haven\'t named yet',
+      "3+ publications at top-tier venues (NeurIPS, ICML, ICLR, or the Journal of We're Running Out of Acronyms)",
+      "Deep expertise in at least one area: reinforcement learning, language models, computer vision, or something we haven't named yet",
       'Experience with large-scale ML training (at least one story about accidentally spending $50K on a GPU cluster overnight)',
     ],
     niceToHaves: [
@@ -206,7 +212,7 @@ Google DeepMind Recruiting`,
     companyId: 'amazon',
     category: 'data-science',
     title: 'Applied Scientist II — Alexa AI',
-    location: 'Seattle, WA or Sunnyvale, CA (in-office — Alexa will know if you\'re not here)',
+    location: "Seattle, WA or Sunnyvale, CA (in-office — Alexa will know if you're not here)",
     salary: '$165,000 - $300,000 + stock (vesting schedule: 5% / 15% / 40% / 40%)',
     type: 'Full-time',
     postedDate: '2024-01-16',
@@ -221,7 +227,7 @@ Google DeepMind Recruiting`,
     ],
     niceToHaves: [
       'Previous experience debugging why a voice assistant ordered 47 dollhouses at 3 AM',
-      'Ability to maintain enthusiasm about voice assistants despite owning one that can\'t turn off your lights reliably',
+      "Ability to maintain enthusiasm about voice assistants despite owning one that can't turn off your lights reliably",
       'Understanding of why "Alexa, stop" sometimes means "Alexa, play more music louder"',
     ],
     rejectionContent: {
@@ -254,7 +260,8 @@ Amazon Science Recruiting
     companyId: 'stripe',
     category: 'data-science',
     title: 'Data Scientist — Fraud Detection',
-    location: 'San Francisco, CA or Remote (fraudsters work remotely too, so you should understand the environment)',
+    location:
+      'San Francisco, CA or Remote (fraudsters work remotely too, so you should understand the environment)',
     salary: '$175,000 - $310,000 (we pay well because getting this wrong costs billions)',
     type: 'Full-time',
     postedDate: '2024-02-07',
@@ -267,7 +274,7 @@ Amazon Science Recruiting
       'SQL fluency and experience with large-scale data pipelines (petabyte-scale, not "my laptop ran out of RAM" scale)',
     ],
     niceToHaves: [
-      'Previous experience in a role where your model\'s errors had direct financial consequences',
+      "Previous experience in a role where your model's errors had direct financial consequences",
       'Understanding of payment ecosystems (card networks, issuing banks, the 47 steps between "buy now" and money moving)',
       'A personal vendetta against fraud (optional but it helps with motivation during on-call)',
     ],

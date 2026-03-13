@@ -206,7 +206,7 @@ Amazon Talent Acquisition
       '5+ years of frontend development experience with React (bonus if you knew it before we open-sourced it)',
       "Deep understanding of WebGL, WebXR, and other technologies you'll never actually use",
       'Experience building for scale — our apps need to handle billions of users who stopped opening them in 2021',
-      "Ability to explain why the metaverse is the future at dinner parties without anyone leaving the table",
+      'Ability to explain why the metaverse is the future at dinner parties without anyone leaving the table',
     ],
     niceToHaves: [
       'Prior experience rebranding yourself from something people liked to something nobody asked for',
@@ -309,9 +309,9 @@ Microsoft Talent Acquisition
     companyId: 'netflix',
     category: 'engineering',
     title: 'Senior Software Engineer — Streaming Platform',
-    location: 'Los Gatos, CA (Remote OK — we trust you, but we also have a culture of radical candor)',
-    salary:
-      '$250,000 - $450,000 (top of market, because we only hire "stunning colleagues")',
+    location:
+      'Los Gatos, CA (Remote OK — we trust you, but we also have a culture of radical candor)',
+    salary: '$250,000 - $450,000 (top of market, because we only hire "stunning colleagues")',
     type: 'Full-time',
     postedDate: '2024-02-20',
     description:
@@ -325,7 +325,7 @@ Microsoft Talent Acquisition
     niceToHaves: [
       'Previous experience being "freed up to find a company more aligned with your skills" (Netflix-speak for fired)',
       'Ability to give and receive feedback that would make a therapist wince',
-      "A Netflix subscription (we check, and we judge your watch history)",
+      'A Netflix subscription (we check, and we judge your watch history)',
     ],
     rejectionContent: {
       'fake-email': {
@@ -396,7 +396,8 @@ Tesla Recruiting
     category: 'engineering',
     title: 'Backend Engineer — Payments Infrastructure',
     location: 'San Francisco, CA or Remote (we wrote the book on remote work, then recalled it)',
-    salary: '$190,000 - $340,000 (we process $1 trillion annually but negotiation is still painful)',
+    salary:
+      '$190,000 - $340,000 (we process $1 trillion annually but negotiation is still painful)',
     type: 'Full-time',
     postedDate: '2024-01-30',
     description:
@@ -455,7 +456,7 @@ Stripe Engineering Recruiting`,
             name: 'Hacker News Clout',
             score: 12,
             comment:
-              'Candidate has 3 HN front-page posts. Impressive, but one was about Rust, and we\'re a Ruby shop (for now).',
+              "Candidate has 3 HN front-page posts. Impressive, but one was about Rust, and we're a Ruby shop (for now).",
           },
         ],
       },

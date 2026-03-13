@@ -5,9 +5,7 @@ export function Header() {
   const { theme, toggleTheme } = useTheme()
   const location = useLocation()
 
-  const navLinks = [
-    { to: '/search?q=', label: 'Jobs' },
-  ]
+  const navLinks = [{ to: '/search?q=', label: 'Jobs' }]
 
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800">

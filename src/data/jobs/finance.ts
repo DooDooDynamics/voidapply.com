@@ -50,7 +50,8 @@ Goldman Sachs Campus Recruiting
           {
             name: 'Target School Index',
             score: 3,
-            comment: 'Attended a perfectly good university that is not on our arbitrary list of 15 schools. Fatal.',
+            comment:
+              'Attended a perfectly good university that is not on our arbitrary list of 15 schools. Fatal.',
           },
           {
             name: 'Excel Proficiency',
@@ -60,12 +61,14 @@ Goldman Sachs Campus Recruiting
           {
             name: 'Prestige Tolerance',
             score: 8,
-            comment: 'Cover letter did not mention Goldman Sachs by name at least 7 times. Insufficient brand worship.',
+            comment:
+              'Cover letter did not mention Goldman Sachs by name at least 7 times. Insufficient brand worship.',
           },
           {
             name: 'Sleep Deprivation Readiness',
             score: 4,
-            comment: 'Resume mentions "hobbies." Analysts at Goldman Sachs do not have hobbies. They have Excel shortcuts.',
+            comment:
+              'Resume mentions "hobbies." Analysts at Goldman Sachs do not have hobbies. They have Excel shortcuts.',
           },
         ],
       },
@@ -85,8 +88,8 @@ Goldman Sachs Campus Recruiting
     requirements: [
       '5+ years of financial analysis or FP&A experience, ideally in high-growth tech',
       'Advanced Excel/Google Sheets skills (pivot tables are your love language)',
-      'Experience with SQL — you\'ll need to pull your own data because the data team has a 6-week backlog',
-      'Understanding of SaaS metrics (ARR, NDR, LTV:CAC, and other acronyms that determine your company\'s valuation)',
+      "Experience with SQL — you'll need to pull your own data because the data team has a 6-week backlog",
+      "Understanding of SaaS metrics (ARR, NDR, LTV:CAC, and other acronyms that determine your company's valuation)",
     ],
     niceToHaves: [
       'Previous experience at a company where "growth at all costs" pivoted to "actually, what are the costs?"',
@@ -120,7 +123,8 @@ Stripe Finance Recruiting`,
     category: 'finance',
     title: 'Finance Manager — AWS',
     location: 'Seattle, WA (in-office — frugality applies to remote work, not to office space)',
-    salary: '$130,000 - $220,000 + RSUs (vesting schedule designed by someone who hates instant gratification)',
+    salary:
+      '$130,000 - $220,000 + RSUs (vesting schedule designed by someone who hates instant gratification)',
     type: 'Full-time',
     postedDate: '2024-01-22',
     description:
@@ -163,7 +167,8 @@ Amazon Finance Recruiting`,
     companyId: 'google',
     category: 'finance',
     title: 'Corporate Finance Lead — Alphabet Bets',
-    location: 'Mountain View, CA (in Alphabet HQ, not the main Google campus — yes, there\'s a difference)',
+    location:
+      "Mountain View, CA (in Alphabet HQ, not the main Google campus — yes, there's a difference)",
     salary: '$180,000 - $310,000 + stock in a company that prints money',
     type: 'Full-time',
     postedDate: '2024-02-20',
@@ -171,13 +176,13 @@ Amazon Finance Recruiting`,
       "Lead financial analysis for Alphabet's 'Other Bets' — the division where moonshot projects go to burn cash beautifully. You'll build financial models for self-driving cars, life-extension research, and internet-beaming balloons, none of which are expected to be profitable this decade. Your job is to make $5 billion in annual losses look like 'strategic investment in the future.' Quarterly earnings calls will test your ability to present red numbers with green enthusiasm.",
     requirements: [
       '8+ years of corporate finance or investment experience',
-      'Experience with long-horizon financial modeling (some of these bets won\'t pay off until 2040, and we need numbers for all of it)',
+      "Experience with long-horizon financial modeling (some of these bets won't pay off until 2040, and we need numbers for all of it)",
       'Comfort presenting to C-suite executives who will ask "but when does this make money?" (the answer is always "soon")',
       'Strong analytical skills and a creative relationship with the concept of ROI',
     ],
     niceToHaves: [
       'Previous experience at a company that spent billions on projects that got canceled',
-      'Ability to value a company whose product doesn\'t exist yet (and may never exist)',
+      "Ability to value a company whose product doesn't exist yet (and may never exist)",
       'Familiarity with the phrase "we\'re investing in the future" as a financial strategy',
     ],
     rejectionContent: {
@@ -204,7 +209,8 @@ Alphabet Finance Recruiting`,
     companyId: 'uber',
     category: 'finance',
     title: 'Senior Manager, Financial Planning & Analysis',
-    location: 'San Francisco, CA (in-office, the commute will help you understand our core business)',
+    location:
+      'San Francisco, CA (in-office, the commute will help you understand our core business)',
     salary: '$170,000 - $280,000 + equity + Uber credits (for the commute we just mentioned)',
     type: 'Full-time',
     postedDate: '2024-02-01',
@@ -213,7 +219,7 @@ Alphabet Finance Recruiting`,
     requirements: [
       '7+ years of FP&A experience, ideally in marketplace or multi-sided platform businesses',
       'Experience modeling complex unit economics (our take rate calculation requires its own spreadsheet)',
-      'Strong business partnering skills — you\'ll need to tell operators their market isn\'t profitable without them storming out',
+      "Strong business partnering skills — you'll need to tell operators their market isn't profitable without them storming out",
       'MBA or CFA preferred (letters after your name help when presenting to the board)',
     ],
     niceToHaves: [
@@ -249,7 +255,8 @@ Uber Finance Recruiting`,
     companyId: 'tesla',
     category: 'finance',
     title: 'Financial Controller — Gigafactory Operations',
-    location: 'Austin, TX (in the Gigafactory — hard hat and steel-toed boots required for finance meetings)',
+    location:
+      'Austin, TX (in the Gigafactory — hard hat and steel-toed boots required for finance meetings)',
     salary: '$145,000 - $240,000 + stock (which moves based on tweets more than earnings)',
     type: 'Full-time',
     postedDate: '2024-01-28',

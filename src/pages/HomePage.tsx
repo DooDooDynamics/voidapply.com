@@ -87,12 +87,8 @@ export function HomePage() {
                     <h3 className="text-sm font-semibold text-linkedin dark:text-blue-400">
                       {job.title}
                     </h3>
-                    <p className="text-sm text-gray-700 dark:text-gray-300">
-                      {company?.name}
-                    </p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400">
-                      {job.location}
-                    </p>
+                    <p className="text-sm text-gray-700 dark:text-gray-300">{company?.name}</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{job.location}</p>
                   </div>
                 </Link>
               )
@@ -127,9 +123,7 @@ export function HomePage() {
                 <span className="text-sm font-medium text-gray-800 dark:text-gray-200">
                   {company.name}
                 </span>
-                <span className="text-xs text-gray-500 dark:text-gray-400">
-                  {company.industry}
-                </span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">{company.industry}</span>
               </Link>
             ))}
           </div>
