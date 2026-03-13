@@ -1,3 +1,68 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faGoogle,
+  faAmazon,
+  faApple,
+  faMicrosoft,
+  faLinkedin,
+  faSlack,
+  faSpotify,
+  faTwitter,
+  faGithub,
+  faDropbox,
+  faShopify,
+  faSalesforce,
+  faUber,
+  faAirbnb,
+  faWordpress,
+  faStripe,
+  faReddit,
+  faYoutube,
+  faInstagram,
+  faFacebook,
+  faPinterest,
+  faTiktok,
+  faSnapchat,
+  faDiscord,
+  faTwitch,
+  faPaypal,
+  faEtsy,
+} from '@fortawesome/free-brands-svg-icons'
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+
+// Map company IDs to Font Awesome brand icons.
+// Keys should be lowercase, matching the companyId slug.
+const FA_BRAND_MAP: Record<string, IconDefinition> = {
+  google: faGoogle,
+  amazon: faAmazon,
+  facebook: faFacebook,
+  apple: faApple,
+  microsoft: faMicrosoft,
+  linkedin: faLinkedin,
+  slack: faSlack,
+  spotify: faSpotify,
+  twitter: faTwitter,
+  'x-corp': faTwitter,
+  github: faGithub,
+  dropbox: faDropbox,
+  shopify: faShopify,
+  salesforce: faSalesforce,
+  uber: faUber,
+  airbnb: faAirbnb,
+  wordpress: faWordpress,
+  stripe: faStripe,
+  reddit: faReddit,
+  youtube: faYoutube,
+  instagram: faInstagram,
+  pinterest: faPinterest,
+  tiktok: faTiktok,
+  snapchat: faSnapchat,
+  discord: faDiscord,
+  twitch: faTwitch,
+  paypal: faPaypal,
+  etsy: faEtsy,
+}
+
 function hashCode(str: string): number {
   let hash = 0
   for (let i = 0; i < str.length; i++) {
@@ -34,6 +99,21 @@ type LogoProps = {
 }
 
 export function CompanyLogo({ companyId, size = 48, className = '' }: LogoProps) {
+  const faIcon = FA_BRAND_MAP[companyId.toLowerCase()]
+
+  if (faIcon) {
+    return (
+      <span
+        style={{ width: size, height: size, fontSize: size * 0.8 }}
+        className={`inline-flex items-center justify-center ${className}`}
+        role="img"
+        aria-label={`${companyId} logo`}
+      >
+        <FontAwesomeIcon icon={faIcon} style={{ width: size * 0.8, height: size * 0.8 }} />
+      </span>
+    )
+  }
+
   const hash = hashCode(companyId)
   const palette = PALETTES[hash % PALETTES.length]!
   const variant = hash % 4

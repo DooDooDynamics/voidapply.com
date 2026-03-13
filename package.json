@@ -16,6 +16,9 @@
     "prettier:fix": "prettier --write ."
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-brands-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^3.2.0",
     "framer-motion": "^12.36.0",
     "fuse.js": "^7.1.0",
     "react": "^19.2.4",
