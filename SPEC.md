@@ -140,6 +140,48 @@ Each skin is a lazy-loaded React component. Same props contract: receives the jo
 - Submit button is greyed out. No error messages explain why. One field somewhere has a hidden validation failure.
 - Final page is a generic "Thank you for your interest" with a reference number like `REQ-2024-847291-A` and zero other information.
 
+### AshbyeHQ™ (`ashbye-hq`) — AshbyHQ parody
+
+- White, airy, and ruthlessly minimal. The darling of well-funded Series B startups who read design blogs.
+- Application has a "Custom Questions" section with a single field: "Why do you want to work here?" — 10,000 character limit, but anything over 500 characters triggers a hidden validation: "Please be concise."
+- A "Pipeline Stage" tracker on the sidebar shows your real-time status: Applied → Review → ... The tracker freezes on "Review" indefinitely.
+- Rejection arrives as a warm, hyper-personalised email that contains zero personal information. Subject: "An update on your application, Candidate."
+
+### Teamfailor™ (`teamfailor`) — Teamtailor parody
+
+- Beautifully branded Scandinavian-minimalist career page. Full-bleed culture photos. "We move fast, we care deeply, we have unlimited oat milk."
+- Forces you to watch a 2-minute "Meet the Team!" culture video before the Apply button unlocks. The video autoplays with sound.
+- After applying, a candidate portal shows your application status as a cheerful coloured dot: 🟡 "In Review". The dot never changes colour.
+- Footer: "We aim to respond within 5 business days." No follow-up ever arrives.
+
+### DumbRecruiters™ (`dumb-recruiters`) — SmartRecruiters parody
+
+- Corporate blue and white. Proclaims "AI-Powered Hiring" on every screen. The AI is doing the opposite of what you'd want.
+- A live "AI Match Score™" gauge is visible as you fill in the form. It starts at 100% and visibly drops with each truthful answer. Lying about your years of experience is the only way to keep it above 50%.
+- After submit: "Your application is being reviewed by Smart AI™. Estimated time: 2–4 business decades."
+- Confirmation page includes a QR code. It links to the company's homepage. No other information.
+
+### BamBoom™ (`bamboom`) — BambooHR parody
+
+- Friendly greens and warm whites. Little illustrated people doing teamwork things. Very wholesome. Very HR.
+- As you fill out the form, a small animated bamboo stalk grows in the corner — the longer you spend, the taller it gets. On submit, a cartoon axe chops it down.
+- Form fields include "How do you like to receive feedback?" and "Describe your ideal manager in three words." These answers go nowhere.
+- Completion screen: "Your career journey with us starts here! 🌱" — followed immediately by an auto-rejection notification.
+
+### JobVoid™ (`jobvoid`) — Jobvite parody
+
+- Red and white, ageing enterprise UI that received one coat of "modern" paint circa 2019.
+- Offers "Social Apply" — apply instantly with LinkedIn or Indeed. Still rejects you.
+- After applying, shows fake live recruiter activity in the sidebar: "Sarah (Recruiter) viewed your profile · 3 seconds ago." Then: "Sarah (Recruiter) is no longer with the company."
+- Email confirmation arrives immediately: "Your application has been received! Reference: JV-{random 8-digit number}." No other communication ever follows.
+
+### ByeBob™ (`byebob`) — HiBob parody
+
+- Saturated startup colours, friendly rounded font, cheerful illustrations throughout. HR software that wants to be your friend.
+- Very casual tone that makes the rejection more jarring. "Hey 👋 Tell us a bit about yourself!" / "Awesome! Almost there!" / "You're doing great!"
+- After you submit, confetti rains down: "Woohoo! Bob got your application!" Four seconds pass. The confetti stops. A single line appears: "Oops — looks like Bob isn't home right now."
+- Candidate portal username is auto-assigned as `candidate_{uuid}`. There is no way to change it.
+
 ---
 
 ## Rejection Modes

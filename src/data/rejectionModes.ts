@@ -20,6 +20,24 @@ export const rejectionModes: RejectionMode[] = [
     isGeneric: true,
   },
   {
+    id: 'shredder',
+    name: 'Paper Shredder',
+    description: 'Your application scrolls into a shredder. For the environment.',
+    isGeneric: true,
+  },
+  {
+    id: 'black-hole',
+    name: 'Black Hole',
+    description: 'Your application crosses the event horizon. No escape.',
+    isGeneric: true,
+  },
+  {
+    id: 'assessment-gauntlet',
+    name: 'Assessment Gauntlet',
+    description: 'PyMetrix™ 6-stage battery. Auto-rejected on completion.',
+    isGeneric: true,
+  },
+  {
     id: 'fake-email',
     name: 'Rejection Email',
     description: 'A lovingly crafted corporate rejection email.',
@@ -29,6 +47,24 @@ export const rejectionModes: RejectionMode[] = [
     id: 'ats-score',
     name: 'ATS Score',
     description: 'Watch AI grade your application into oblivion.',
+    isGeneric: false,
+  },
+  {
+    id: 'interview-then-ghost',
+    name: 'Interview Then Ghost',
+    description: 'Phone → Technical → Final → Offer stage → blank screen.',
+    isGeneric: false,
+  },
+  {
+    id: 'culture-fit',
+    name: 'Culture Fit',
+    description: 'Offer pending... then a 2-sentence email. No feedback.',
+    isGeneric: false,
+  },
+  {
+    id: 'phantom-offer',
+    name: 'Phantom Offer',
+    description: 'Verbal offer. Countdown to Friday. Rescission email.',
     isGeneric: false,
   },
 ]

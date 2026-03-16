@@ -25,13 +25,27 @@ export type RejectionModeId =
   | 'black-hole'
   | 'ghost'
   | 'speedrun'
+  | 'assessment-gauntlet'
   | 'fake-email'
   | 'ats-score'
   | 'interview-then-ghost'
+  | 'culture-fit'
+  | 'phantom-offer'
 
-export type GenericRejectionModeId = 'dev-null' | 'shredder' | 'black-hole' | 'ghost' | 'speedrun'
+export type GenericRejectionModeId =
+  | 'dev-null'
+  | 'shredder'
+  | 'black-hole'
+  | 'ghost'
+  | 'speedrun'
+  | 'assessment-gauntlet'
 
-export type PersonalizedRejectionModeId = 'fake-email' | 'ats-score' | 'interview-then-ghost'
+export type PersonalizedRejectionModeId =
+  | 'fake-email'
+  | 'ats-score'
+  | 'interview-then-ghost'
+  | 'culture-fit'
+  | 'phantom-offer'
 
 export type FakeEmailContent = {
   subject: string
@@ -58,10 +72,24 @@ export type InterviewThenGhostContent = {
   stages: InterviewStage[]
 }
 
+export type CultureFitContent = {
+  recruiterName: string
+  stageReached: string
+}
+
+export type PhantomOfferContent = {
+  recruiterName: string
+  jobTitle: string
+  fakeSalary: string
+  promisedTimeline: string
+}
+
 export type RejectionContent = {
   'fake-email'?: FakeEmailContent
   'ats-score'?: AtsScoreContent
   'interview-then-ghost'?: InterviewThenGhostContent
+  'culture-fit'?: CultureFitContent
+  'phantom-offer'?: PhantomOfferContent
 }
 
 export type Job = {
