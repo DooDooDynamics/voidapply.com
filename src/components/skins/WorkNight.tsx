@@ -18,7 +18,6 @@ const STEPS = [
 
 function WorkNight({ job, company, onSubmit }: AtsSkinProps) {
   const [step, setStep] = useState(0)
-  const progress = ((step + 1) / STEPS.length) * 100
 
   const next = () => {
     if (step < STEPS.length - 1) {
@@ -34,31 +33,42 @@ function WorkNight({ job, company, onSubmit }: AtsSkinProps) {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
-      {/* Header */}
-      <div className="bg-navy-900 text-white px-6 py-4 rounded-t-lg">
-        <h1 className="text-lg font-bold">
-          <span className="text-orange-400">Work</span>Night&trade;
-        </h1>
-        <p className="text-xs text-gray-400 mt-1">
-          Applying to: {job.title} at {company.name}
-        </p>
+      {/* Header — dark navy #003b5c per spec */}
+      <div className="text-white px-6 py-4 rounded-t-lg flex items-center justify-between" style={{ backgroundColor: '#003b5c' }}>
+        <div>
+          <h1 className="text-lg font-bold">
+            <span className="text-orange-400">Work</span>Night&trade;
+          </h1>
+          <p className="text-xs text-gray-300 mt-1">
+            Applying to: {job.title} at {company.name}
+          </p>
+        </div>
+        <div className="text-xs text-gray-300 flex items-center gap-3">
+          <span>My Applications</span>
+          <div className="w-7 h-7 rounded-full bg-gray-500 flex items-center justify-center text-xs">👤</div>
+        </div>
       </div>
 
-      {/* Progress */}
-      <div className="bg-gray-100 dark:bg-gray-800 px-6 py-3 border-x border-gray-200 dark:border-gray-700">
-        <div className="flex justify-between text-xs text-gray-500 dark:text-gray-400 mb-2">
-          <span>
-            Step {step + 1} of {STEPS.length}: {STEPS[step]}
-          </span>
-          <span>{Math.round(progress)}%</span>
-        </div>
-        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-          <div className="bg-orange-500 h-2 rounded-full" style={{ width: `${progress}%` }} />
+      {/* Progress — horizontal step list, clickable completed steps */}
+      <div className="bg-gray-100 dark:bg-gray-800 px-4 py-3 border-x border-gray-200 dark:border-gray-700 overflow-x-auto">
+        <div className="flex gap-1 min-w-max">
+          {STEPS.map((s, i) => (
+            <button
+              key={i}
+              onClick={() => i < step && setStep(i)}
+              disabled={i > step}
+              className={`px-2 py-1 text-xs rounded flex items-center gap-1 transition-colors
+                ${i === step ? 'bg-blue-600 text-white' : i < step ? 'bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 border border-blue-300 dark:border-blue-600 cursor-pointer hover:bg-blue-50' : 'text-gray-400 dark:text-gray-500 cursor-not-allowed'}`}
+            >
+              {i < step && <span>✓</span>}
+              <span>{i + 1}. {s}</span>
+            </button>
+          ))}
         </div>
       </div>
 
       {/* Form */}
-      <div className="border border-t-0 border-gray-200 dark:border-gray-700 rounded-b-lg p-6 bg-white dark:bg-gray-900">
+      <form className="border border-t-0 border-gray-200 dark:border-gray-700 rounded-b-lg p-6 bg-white dark:bg-gray-900" onSubmit={e => { e.preventDefault(); next() }}>
         <div key={step}>
           {step === 0 && (
             <div className="space-y-4">
@@ -220,6 +230,7 @@ function WorkNight({ job, company, onSubmit }: AtsSkinProps) {
         {/* Navigation */}
         <div className="flex justify-between mt-8 pt-4 border-t border-gray-200 dark:border-gray-700">
           <button
+            type="button"
             onClick={prev}
             disabled={step === 0}
             className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed"
@@ -227,13 +238,14 @@ function WorkNight({ job, company, onSubmit }: AtsSkinProps) {
             Back
           </button>
           <button
-            onClick={next}
-            className="px-6 py-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 rounded-md"
+            type="submit"
+            className="px-6 py-2 text-sm font-medium text-white rounded-md"
+            style={{ backgroundColor: '#0875e1' }}
           >
             {step === STEPS.length - 1 ? 'Submit Application' : 'Next Step'}
           </button>
         </div>
-      </div>
+      </form>
     </div>
   )
 }
