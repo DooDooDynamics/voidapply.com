@@ -21,7 +21,8 @@
     "test:e2e:smoke": "playwright test playwright/smoke.spec.ts",
     "test:e2e:skins": "playwright test playwright/skins",
     "test:e2e:rejections": "playwright test playwright/rejections",
-    "test:e2e:core": "playwright test playwright/core"
+    "test:e2e:core": "playwright test playwright/core",
+    "e2e:install": "npx playwright install --with-deps chromium"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
