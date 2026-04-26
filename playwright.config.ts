@@ -2,7 +2,7 @@ import { defineConfig, devices } from '@playwright/test'
 
 export default defineConfig({
   testDir: './playwright',
-  testMatch: '**/*.ts',
+  testMatch: '**/*.spec.ts',
   outputDir: './playwright/test-results',
   use: {
     baseURL: 'http://localhost:5174',
@@ -11,7 +11,7 @@ export default defineConfig({
   webServer: {
     command: 'npm run dev -- --port 5174',
     url: 'http://localhost:5174',
-    reuseExistingServer: false,
+    reuseExistingServer: true,
     timeout: 30000,
   },
   projects: [

@@ -14,9 +14,14 @@
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "screenshot": "playwright test playwright/screenshot.ts --project=chromium",
-    "screenshot:dark": "playwright test playwright/screenshot.ts --project=chromium-dark",
-    "screenshot:all": "playwright test playwright/screenshot.ts"
+    "screenshot": "playwright test playwright/screenshot.spec.ts --project=chromium",
+    "screenshot:dark": "playwright test playwright/screenshot.spec.ts --project=chromium-dark",
+    "screenshot:all": "playwright test playwright/screenshot.spec.ts",
+    "test:e2e": "playwright test --grep-invert \"screenshot (skin|rejection):\"",
+    "test:e2e:smoke": "playwright test playwright/smoke.spec.ts",
+    "test:e2e:skins": "playwright test playwright/skins",
+    "test:e2e:rejections": "playwright test playwright/rejections",
+    "test:e2e:core": "playwright test playwright/core"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
@@ -34,6 +39,7 @@
     "@tailwindcss/vite": "^4.2.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
+    "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.2.0",
